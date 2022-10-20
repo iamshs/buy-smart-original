@@ -1,11 +1,7 @@
 
-.body{
-    height: 100% ;
+.shop-btn:hover{
+
+    background-color: #fff;
+    color: black;
 }
-.banner{
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-}
+
