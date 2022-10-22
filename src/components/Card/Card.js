@@ -7,7 +7,7 @@ import card3 from "../../assets/card-3.jpg";
 const Card = () => {
   return (
     <div>
-      <div className=" gap-4 grid lg:grid-cols-3 grid-cols-1 mx-5 lg:mx-20  my-5 lg:my-10">
+      <div className=" gap-4 grid lg:grid-cols-3 grid-cols-1 mx-5 lg:mx-20  mt-5 mb-20 lg:mb=40 lg:mt-10">
         {/* card--1 */}
         <div className="card shadow-xl image-full">
           <figure className="" >
@@ -51,7 +51,7 @@ const Card = () => {
             <h2 className="card-title text-3xl fw-bold text-white">Let's Lorem Suit Up!</h2>
             <p className="text-white text-md my-3">If a dog chews shoes whose shoes does he choose?</p>
             <button className=' card-btn bg-white font-bold text-sm text-black py-3.5 mt-2 lg:mt-0 px-9'>
-               SHOP NOW </button>
+               CHECK OUT </button>
             </div>
           </div>
         </div>

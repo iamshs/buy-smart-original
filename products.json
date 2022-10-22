@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1619102814948-e164e584cf0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "name": "Limon",
+    "price": "$148.26",
+    "gender": "Female",
+    "rate": "Dr"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Leer",
+    "price": "$146.81",
+    "gender": "Male",
+    "rate": "Mrs"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1467632499275-7a693a761056?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&f",
+    "name": "Niemetz",
+    "price": "$147.16",
+    "gender": "Non-binary",
+    "rate": "Mrs"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1591348278863-a8fb3887e2aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Folling",
+    "price": "$116.27",
+    "gender": "Male",
+    "rate": "Mr"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1542996966-2e31c00bae31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzB8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Moodey",
+    "price": "$130.14",
+    "gender": "Male",
+    "rate": "Ms"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1576828831022-ca41d3905fb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Lawfull",
+    "price": "$106.54",
+    "gender": "Male",
+    "rate": "Ms"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "MacMearty",
+    "price": "$104.65",
+    "gender": "Male",
+    "rate": "Dr"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1586387582759-c73f712af2b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Dowber",
+    "price": "$104.65",
+    "gender": "Polygender",
+    "rate": "Rev"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1522390108011-5f8667fd551d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Thorn",
+    "price": "$124.56",
+    "gender": "Male",
+    "rate": "Dr"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDR8fGZhc2hpb24lMjBhbmQlMjBiZWF1dHl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+    "name": "Brigge",
+    "price": "$122.31",
+    "gender": "Genderfluid",
+    "rate": "Honorable"
+  }
+]
