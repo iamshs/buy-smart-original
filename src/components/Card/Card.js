@@ -6,8 +6,8 @@ import card3 from "../../assets/card-3.jpg";
 
 const Card = () => {
   return (
-    <div>
-      <div className=" gap-4 grid lg:grid-cols-3 grid-cols-1 mx-5 lg:mx-20  mt-5 mb-20 lg:mb=40 lg:mt-10">
+    <div className="bg-gradient-to-r from-slate-50 to-slate-50 min-h-screen">
+      <div className=" gap-4 grid lg:grid-cols-3 grid-cols-1 mx-5 lg:mx-20   pb-20 pt-16 lg:mb=40  lg:pt-16">
         {/* card--1 */}
         <div className="card shadow-xl image-full">
           <figure className="" >
