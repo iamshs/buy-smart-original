@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -8,7 +9,7 @@ const Products = () => {
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
-        console.log(data);
+        // console.log(data);
       });
   }, []);
 
@@ -18,7 +19,18 @@ const Products = () => {
         
         Featured Products
       </h1>
-      <hr className="w-25" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-5">
+        {
+          products.map(p=> <Product
+          key={p.id}
+          p={p}
+          >
+
+          </Product>)
+        }
+      </div>
+      
     </div>
   );
 };
