@@ -14,9 +14,9 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-yellow-50 to-yellow-50 min-h-screen pt-5 lg:pt-16">
+    <div className="bg-gradient-to-r from-yellow-50 to-yellow-50 min-h-screen pt-5 lg:pt-16 pb-10 lg:pb-20">
       <h1 className=" text-center text-3xl lg:text-5xl text-black font-semibold subpixel-antialiased 
-      py-10  lg:py-20 ">
+      py-10  lg:py-16 lg:mb-5 mb-0">
         Featured Products
       </h1>
 

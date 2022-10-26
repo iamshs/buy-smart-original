@@ -2,7 +2,7 @@ import React from "react";
 import { DynamicStar } from "react-dynamic-star";
 
 const Product = ({ p }) => {
-  console.log(p);
+  
   const { gender, image, name, price } = p;
   return (
     <div className="card bg-slate-50 p-10 lg:p-2 ">
@@ -15,16 +15,16 @@ const Product = ({ p }) => {
         <h2 className="text-lg font-semibold"> {price} </h2>
       </div>
       <div className="rating">
-        <input type="radio" name="rating-1" className="mask mask-star " />
+        <input type="radio" name="rating-1" className="mask mask-star checked" />
         <input
           type="radio"
           name="rating-1"
           className="mask mask-star"
           checked
         />
-        <input type="radio" name="rating-1" className="mask mask-star" />
-        <input type="radio" name="rating-1" className="mask mask-star" />
-        <input type="radio" name="rating-1" className="mask mask-star" />
+        <input type="radio" name="rating-1" className="mask mask-star checked" />
+        <input type="radio" name="rating-1" className="mask mask-star checked" />
+        <input type="radio" name="rating-1" className="mask mask-star checked" />
       </div>
     </div>
   );

@@ -1,0 +1,14 @@
+.offer-bg{
+   height: auto;
+   background-attachment: fixed;
+   background-position: center,center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+
+.bgi-btn:hover{
+
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}

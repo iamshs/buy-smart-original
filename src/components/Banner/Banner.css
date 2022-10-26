@@ -1,3 +1,8 @@
+.bg-image{
+    background-attachment: fixed;
+    background-position: 50% , 50%;
+    background-size: cover;
+}
 
 .shop-btn:hover{
 

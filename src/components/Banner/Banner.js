@@ -4,12 +4,12 @@ import bg from '../../assets/bg.png'
 
 const Banner = () => {
     return (
-        <div className="hero  grid-cols-2 text-center sm-max-w-full  min-h-screen  " 
+        <div className="hero  grid-cols-2 text-center bg-image  min-h-screen  " 
         style={{ backgroundImage: `url(${bg})` }}>
         <div className="hero-overlay bg-opacity-0"></div>
         <div className="hero-content  text-neutral-content ">
-          <div className=" max-w-md ">
-            <h1 className="mb-5 text-5xl font-bold">DEW DROPS OFFER FOR COLD WINTER</h1>
+          <div className="lg:max-w-md text-center  ">
+            <h1 className="mb-5 text-3xl lg:text-5xl font-bold">DEW DROPS OFFER FOR COLD WINTER</h1>
             <p className="mb-5 text-2xl">25% Off On All Products</p>
             <button className="btn btn-accent text-slate-900 mx-4 py-0.5 rounded-none px-8  font-bold">Get Started</button>
             <button className='border shop-btn font-bold text-sm text-base-100 py-3.5 mt-2 lg:mt-0 px-9'> FIND MORE </button>
