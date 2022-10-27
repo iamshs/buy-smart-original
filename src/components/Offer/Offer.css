@@ -1,14 +1,49 @@
-.offer-bg{
-   height: auto;
-   background-attachment: fixed;
-   background-position: center,center;
-   background-repeat: no-repeat;
-   background-size: cover;
+.offer-bg {
+  background: url("https://img.freepik.com/free-photo/attractive-young-woman-black-swimsuit-is-relaxing-pool_169016-22938.jpg?w=996&t=st=1666884718~exp=1666885318~hmac=1b833e380f9550209b61adbf4d9c4e8b36c0571455cc4934c9a8a89ce7a1d2b4");
+  background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center center;
+height: auto;
+margin: 3px auto 0;
+position: relative;
+top: 0;
+left: 0;
+
   
 }
 
-.bgi-btn:hover{
+.bgi-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
 
-    background-color: rgb(0, 0, 0);
-    color: #fff;
+@media screen and (max-width: 767px) {
+.offer-bg{
+    background-image: url('https://img.freepik.com/free-photo/attractive-young-woman-black-swimsuit-is-relaxing-pool_169016-22938.jpg?w=996&t=st=1666884718~exp=1666885318~hmac=1b833e380f9550209b61adbf4d9c4e8b36c0571455cc4934c9a8a89ce7a1d2b4');
+    margin: 3px auto 0;
+position: relative;
+top: 0;
+left: 0;
+}
+}
+
+.offer-text{
+    background: #11F87D;
+background: linear-gradient(to right, #11F87D 14%, #1B63CF 58%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.offer-percent{
+    background: #11736C;
+background: linear-gradient(to left, #11736C 0%, #3EFF29 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+
+
 }

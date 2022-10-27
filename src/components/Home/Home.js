@@ -4,6 +4,7 @@ import Card from '../Card/Card';
 import Header from '../Header/Header';
 import Offer from '../Offer/Offer';
 import Products from '../Products/Products';
+import Service from '../Service/Service';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Card />
             <Products />
             <Offer />
+            <Service />
         </div>
     );
 };
