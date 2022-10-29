@@ -1,22 +1,32 @@
-import React from 'react';
-import './Banner.css'
-import bg from '../../assets/bg.png'
+import React from "react";
+import "./Banner.css";
+import bg from "../../assets/bg.jpg";
+import Header from "../Header/Header";
 
 const Banner = () => {
-    return (
-        <div className="hero  grid-cols-2 text-center bg-image  min-h-screen  " 
-        style={{ backgroundImage: `url(${bg})` }}>
-        <div className="hero-overlay bg-opacity-0"></div>
-        <div className="hero-content  text-neutral-content ">
-          <div className="lg:max-w-md text-center  ">
-            <h1 className="mb-5 text-3xl lg:text-5xl font-bold">DEW DROPS OFFER FOR COLD WINTER</h1>
-            <p className="mb-5 text-2xl">25% Off On All Products</p>
-            <button className="btn btn-accent text-slate-900 mx-4 py-0.5 rounded-none px-8  font-bold">Get Started</button>
-            <button className='border shop-btn font-bold text-sm text-base-100 py-3.5 mt-2 lg:mt-0 px-9'> FIND MORE </button>
-          </div>
-        </div>
-      </div>
-    );
+  return (
+    <div className="header-bg mt-0 pt-0 " style={{ backgroundImage: `url(${bg})` }} >
+
+      <Header />
+      
+      <h1 className=" font-bold  lg:text-5xl text-3xl text-white lg:max-w-2xl lg:pt-28 pl-6 ">
+        Dewdrops Offers For!
+      </h1>
+      <h1 className=" font-bold  lg:text-5xl text-3xl text-white max-w-lg lg:py-8 py-4 pl-6 ">
+        Cold Winter!
+      </h1>
+   
+   <h2 className="font-bold text-xl lg:text-2xl text-white pl-6 lg:py-8 py-4 ">25% Off On All Products</h2>
+   <button className="btn btn-accent text-slate-900 mx-4 py-0.5 rounded-none px-8 lg:mb-20 mt-10 font-bold">
+    Get Started
+  </button>
+  <button className="border shop-btn font-bold text-sm text-black bg-white py-3.5 mb-20 mt-10  px-9">
+    {" "}
+    FIND MORE{" "}
+  </button>
+
+    </div>
+  );
 };
 
 export default Banner;
