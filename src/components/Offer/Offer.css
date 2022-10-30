@@ -1,54 +1,46 @@
 .offer-bg {
-  background: url("https://img.freepik.com/free-photo/attractive-young-woman-black-swimsuit-is-relaxing-pool_169016-22938.jpg?w=996&t=st=1666884718~exp=1666885318~hmac=1b833e380f9550209b61adbf4d9c4e8b36c0571455cc4934c9a8a89ce7a1d2b4");
-  background-repeat:no-repeat;
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-background-position:center center;
-height: auto;
-background-attachment: fixed;
-
-
-  
-}
-
-@media screen and (max-width:767px) {
-  .offer-bg{
-    background-attachment: unset;
-  }
-  
-}
-
-.bgi-btn:hover {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
+  /* background: url("https://cdn.pixabay.com/photo/2017/01/10/13/31/woman-1969084_1280.jpg"); */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: auto;
+  background-attachment: fixed;
 }
 
 @media screen and (max-width: 767px) {
-.offer-bg{
-    background-image: url('https://img.freepik.com/free-photo/attractive-young-woman-black-swimsuit-is-relaxing-pool_169016-22938.jpg?w=996&t=st=1666884718~exp=1666885318~hmac=1b833e380f9550209b61adbf4d9c4e8b36c0571455cc4934c9a8a89ce7a1d2b4');
+  .offer-bg {
+    background-attachment: unset;
+  }
+}
+
+.bgi-btn:hover {
+  background-color: rgb(2 132 199);
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .offer-bg {
+    background-image: url("https://img.freepik.com/free-photo/attractive-young-woman-black-swimsuit-is-relaxing-pool_169016-22938.jpg?w=996&t=st=1666884718~exp=1666885318~hmac=1b833e380f9550209b61adbf4d9c4e8b36c0571455cc4934c9a8a89ce7a1d2b4");
     margin: 3px auto 0;
-position: relative;
-top: 0;
-left: 0;
-}
-}
-
-.offer-text{
-    background: #11F87D;
-background: linear-gradient(to right, #11F87D 14%, #1B63CF 58%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
-.offer-percent{
-    background: #11736C;
-background: linear-gradient(to left, #11736C 0%, #3EFF29 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.offer-text {
+  background: #11f87d;
+  background: linear-gradient(to right, #1d6af9 14%, #00bab4 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-
-
+.offer-percent {
+  background: #11736c;
+  background: linear-gradient(to left, #0351ab 0%, #038a66 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

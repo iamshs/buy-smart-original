@@ -17,7 +17,7 @@ const Banner = () => {
       </h1>
    
    <h2 className="font-bold text-xl lg:text-2xl text-white pl-6 lg:py-8 py-4 ">25% Off On All Products</h2>
-   <button className="btn btn-accent text-slate-900 mx-4 py-0.5 rounded-none px-8 lg:mb-20 mt-10 font-bold">
+   <button className="bg-sky-600 hover:bg-sky-800 text-base-100 mx-4 py-3.5 px-9 rounded-none px-8 lg:mb-20 mt-10 font-bold">
     Get Started
   </button>
   <button className="border shop-btn font-bold text-sm text-black bg-white py-3.5 mb-20 mt-10  px-9">
