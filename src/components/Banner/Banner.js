@@ -6,8 +6,6 @@ import Header from "../Header/Header";
 const Banner = () => {
   return (
     <div className="header-bg  " style={{ backgroundImage: `url(${bg})` }} >
-
-      <Header />
       
       <h1 className=" font-bold  lg:text-5xl text-3xl text-white lg:max-w-2xl lg:pt-28 pl-6 ">
         Dewdrops Offers For
