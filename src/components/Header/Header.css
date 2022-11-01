@@ -1,3 +1,9 @@
 .nav{
-    
+    background: rgb(2,37,85);
+    background: linear-gradient(90deg, rgba(2,37,85,0.6451622885482318) 35%,
+     rgba(2,16,50,0.43787937538296573) 100%);
+     opacity: 1;
+     position: fixed;
+     top: 0;
+     width: 100%;
 }

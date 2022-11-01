@@ -7,7 +7,7 @@ const Header = () => {
     <>
 
     <li className='text-lg font-bold'>
-      <Link to={'/'} >HOME</Link>
+      <Link to={'/'}  >HOME</Link>
     </li>
     <li className='text-lg font-bold'>
       <Link to={'/about'} >ABOUT</Link>
@@ -17,7 +17,7 @@ const Header = () => {
   )
 
     return (
-        <div className="navbar text-white lg:py-6 nav text-yellow-400 ">
+        <div className="navbar text-white lg:py-6 nav ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
