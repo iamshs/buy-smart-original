@@ -10,11 +10,13 @@ const AboutDetails = () => {
 
         <div className="text-black p-4 max-w-md ">
 
-          <div className="flex items-center justify-start py-2 lg:py-6">
-            <div style={{ height: "2px" }} className="bg-sky-600 w-32"></div>
+          <div className="flex items-center justify-start py-2 lg:py-4">
+            <div style={{ height: "3px" }} className="bg-sky-600 w-28">
+
+            </div>
           </div>
 
-          <h1 className="lg:text-4xl text-2xl  font-bold lg:my-8 my-4">Who We Are</h1>
+          <h1 className="lg:text-4xl text-2xl  font-bold lg:my-6 my-4">Who We Are</h1>
           <p className="">
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
