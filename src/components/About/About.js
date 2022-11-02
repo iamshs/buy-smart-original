@@ -1,8 +1,9 @@
 import React from 'react';
 import AboutBg from '../AboutBg/AboutBg';
 import AboutDetails from '../AboutDetails/AboutDetails';
+import AboutFollow from '../AboutFollow/AboutFollow';
 import AboutTeam from '../AboutTeam/AboutTeam';
-import Header from '../Header/Header';
+
 
 
 
@@ -12,6 +13,7 @@ const About = () => {
        <AboutBg ></AboutBg>
        <AboutDetails />
        <AboutTeam />
+       <AboutFollow />
        </>
     );
 };
