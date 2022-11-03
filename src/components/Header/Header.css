@@ -1,3 +1,5 @@
 .nav{
-    background-color: rgba(3, 31, 39, 0.9);   
+    background: rgb(7,98,108);
+background: linear-gradient(90deg,
+ rgba(7,98,108,0.8748541652989321) 4%, rgba(4,57,60,0.9308765742625175) 55%);
 }

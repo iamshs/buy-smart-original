@@ -7,6 +7,17 @@
     background-position:center center;
     height: auto;
     background-attachment: fixed;
+    text-shadow : 3px 3px 3px #000000;
+}
+
+.home-btn{
+    background: rgb(5,94,99);
+background: linear-gradient(90deg, rgba(5,94,99,1) 19%, rgba(8,122,134,1) 95%);
+}
+
+.home-btn:hover{
+    background: rgb(13,62,65);
+background: linear-gradient(90deg, rgba(13,62,65,1) 19%, rgba(4,66,73,1) 95%);
 }
 
 .shop-btn:hover{

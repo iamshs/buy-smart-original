@@ -12,12 +12,15 @@ const Header = () => {
     <li className='text-lg font-bold'>
       <Link to={'/about'} >ABOUT</Link>
     </li>
+    <li className='text-lg font-bold'>
+      <Link to={'/contact'} >CONTACT</Link>
+    </li>
 
     </>
   )
 
     return (
-        <div className="navbar text-white lg:py-6 bg-opacity-75 nav ">
+        <div className="navbar text-white bg-opacity-75 nav ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

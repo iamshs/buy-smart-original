@@ -1,0 +1,24 @@
+.input-field{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(243, 241, 241);
+}
+
+.input-submit{
+    background: rgb(25,80,83);
+    background: linear-gradient(90deg, rgba(25,80,83,1) 19%, rgba(6,95,105,1) 95%);
+    color: white;
+}
+
+.input-submit:hover{
+    background: rgb(19,56,59);
+    background: linear-gradient(90deg, rgba(19,56,59,1) 19%, rgba(1,69,78,1) 95%);
+}
+
+
+

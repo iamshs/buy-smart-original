@@ -1,19 +1,23 @@
-.bg-about{
+.contact-bg{
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
     background-position:center center;
-    height: 80vh;
+    height: 50vh;
     background-attachment: fixed;
-  
-    text-shadow : 6px 6px 6px #000000;
+   /* filter:brightness(80%) contrast(120%); */
+   text-shadow : 3px 3px 3px #000000;
+    
+
 }
 
+
 @media screen and (max-width:767px) {
-    .bg-about{
-        background-attachment: unset;
-        height: 50vh;
-    }
+    
+.contact-bg{
+    background-attachment: unset;
+}
+
 }
