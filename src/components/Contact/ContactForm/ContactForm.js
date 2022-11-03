@@ -3,10 +3,10 @@ import './ContactForm.css'
 
 const ContactForm = () => {
   return (
-    <div className=" flex justify-between px-10 pb-20 items-center">
-      <div className="text-black max-w-lg">
+    <div className=" flex lg:justify-between lg:px-10 px-5 pb-20 lg:items-center flex-col lg:flex-row ">
+      <div className="text-black max-w-lg mb-6 lg:mb-0">
         <h3 className="text-md font-bold">Don't be a stranger!</h3>
-        <h1 className="text-4xl font-bold mt-2 mb-8">
+        <h1 className="lg:text-4xl text-3xl font-bold mt-2 mb-8">
           You tell us. We listen.
         </h1>
         <p>
