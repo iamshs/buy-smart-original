@@ -33,14 +33,14 @@
 
 .offer-text {
   background: #11f87d;
-  background: linear-gradient(to right, #1d6af9 14%, #00bab4 58%);
+  background: linear-gradient(to right, #1d4e56 14%, #00bab4 58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .offer-percent {
   background: #11736c;
-  background: linear-gradient(to left, #0351ab 0%, #038a66 100%);
+  background: linear-gradient(to left, #1d4e56 0%, #02a19c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
