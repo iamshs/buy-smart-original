@@ -1,7 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { signOut } from 'firebase/auth';
+import { FaUserCircle } from 'react-icons/fa';
+import { RiLogoutCircleFill } from 'react-icons/ri';
+
 const Header = () => {
+  const [user] = useAuthState(auth)
+  const navigate = useNavigate ()
+  const logout =()=>{
+    signOut(auth)
+    navigate('/login')
+   
+    
+  }
 
   const menuItems = (
     <>
@@ -15,8 +29,13 @@ const Header = () => {
     <li className='text-lg font-bold'>
       <Link to={'/contact'} >CONTACT</Link>
     </li>
-    <li className='text-lg font-bold'>
-      <Link to={'/login'} >LOGIN</Link>
+    <li className='text-4xl'>
+    {user ? <button   onClick={logout} >
+      <RiLogoutCircleFill/>
+    </button> : <Link to="/login">
+      <span > <FaUserCircle/> </span>
+      </Link>}
+     
     </li>
 
     </>
