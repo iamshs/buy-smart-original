@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { BsGoogle } from 'react-icons/bs';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import './Register.css'
 
 const Register = () => {
 
@@ -81,10 +82,13 @@ const Register = () => {
                
                 <input type={'email'} className='auth-input mb-3' onChange={handleEmail}
                  placeholder='Your Email..' />
+                 { errors?.email && <p className='error-message' > {errors.email} </p> }
                 <input type={'password'} className='auth-input ' onChange={handlePass}
                  placeholder='Your Password..' />
+                   { errors?.pass && <p className='error-message' > {errors.pass} </p> }
                 <input type={'password'} className='auth-input ' onChange={handleConfirmPass}
                  placeholder='Confirm Password..' />
+                   { errors?.confirmPass && <p className='error-message' > {errors.confirmPass} </p> }
                 <input type={'submit'} className='auth-submit text-xl font-bold py-2 mt-4 rounded'
                  value='Sign Up' />
 

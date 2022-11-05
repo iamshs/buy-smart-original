@@ -1,0 +1,8 @@
+.error-message{
+    font-size: 14px;
+    color: rgb(0, 255, 255);
+    margin:10px;
+}
+.error-message::before{
+    content: "❌ ";
+}
