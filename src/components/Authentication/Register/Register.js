@@ -29,12 +29,13 @@ const Register = () => {
        const emailRegex = /\S+@\S+\.\S+/ ;
        const validEmail = emailRegex.test(e.target.value);
        if (validEmail){
-        setUserInfo({...userInfo , email:e.target.value})
-        setErrors({...errors , email:''})
+        setUserInfo({...userInfo , email: e.target.value})
+        setErrors({...errors , email:""})
        }
        else{
-        setUserInfo({...userInfo , email:''})
         setErrors({...errors , email:'Your Email is not Valid' })
+        setUserInfo({...userInfo , email:""})
+        
        }
 
     }
@@ -43,12 +44,12 @@ const Register = () => {
     const passRegex = /.{8,}/ ;   
     const validPass = passRegex.test(e.target.value);
     if(validPass){
-        setUserInfo({...userInfo , email:e.target.value})
-        setErrors({...errors , email:''});
+        setUserInfo({...userInfo , pass:e.target.value})
+        setErrors({...errors , pass:""});
     } 
     else{
-        setErrors({...errors , email:'Your Password must be at least 8 character'})
-        setUserInfo({...userInfo , email:''});
+        setErrors({...errors , pass:'Your Password must be at least 8 character'})
+        setUserInfo({...userInfo , pass:""});
     }
     }
 //handle--confirm--pass
@@ -66,6 +67,8 @@ const Register = () => {
 //handle---Register
     const handleRegister = e =>{
         e.preventDefault()
+        createUserWithEmailAndPassword(userInfo.email , userInfo.pass)
+        console.log(userInfo.email , userInfo.pass)
      }
 
     return (
