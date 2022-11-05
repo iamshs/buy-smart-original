@@ -17,19 +17,19 @@ const FooterLink = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <div>
             <h2 className="font-semibold text-2xl mb-4">For Her</h2>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Women Jeans</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Tops and Shirts</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Women Jackets</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Heels and Flats</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Women Accessories</Link>
             </p>
           </div>
@@ -38,19 +38,19 @@ const FooterLink = () => {
 
           <div>
             <h2 className="font-semibold text-2xl mb-4">For Him</h2>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Men Jeans</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>T-Shirts</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Men Jackets</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Shows and Slippers</Link>
             </p>
-            <p className="text-lg hover:text-sky-600">
+            <p className="text-lg hover:text-teal-800">
               <Link>Men Accessories</Link>
             </p>
           </div>
