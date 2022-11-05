@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { BsGoogle } from 'react-icons/bs';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import './Register.css'
+import { toast, ToastContainer } from 'react-toastify';
 
 const Register = () => {
 
@@ -13,6 +14,7 @@ const Register = () => {
        
         hookError,
       ] = useCreateUserWithEmailAndPassword(auth);
+      const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
 
     const [userInfo , setUserInfo] = useState ({
         email: "",
@@ -64,6 +66,12 @@ const Register = () => {
             setUserInfo({ ...userInfo, confirmPass: "" })
         }
     }
+
+    const navigate = useNavigate()
+
+    if (user){
+        navigate('/')
+    }
     
 //handle---Register
     const handleRegister = e =>{
@@ -71,6 +79,26 @@ const Register = () => {
         createUserWithEmailAndPassword(userInfo.email , userInfo.pass)
         console.log(userInfo.email , userInfo.pass)
      }
+
+     useEffect(() => {
+        const error = hookError || googleError;
+        if (error) {
+            switch (error?.code) {
+                case "auth/invalid-email":
+                    toast("Please provide a valid email");
+                    break;
+                case "auth/popup-closed-by-user":
+                    toast("Pop-up Closed By User");
+                    break;
+      
+                case "auth/invalid-password":
+                    toast("Wrong password. Intruder!!")
+                    break;
+                default:
+                    toast("something went wrong")
+            }
+        }
+      }, [hookError, googleError])
 
     return (
         <div className='login-bg flex justify-center items-center  '>
@@ -92,6 +120,10 @@ const Register = () => {
                 <input type={'submit'} className='auth-submit text-xl font-bold py-2 mt-4 rounded'
                  value='Sign Up' />
 
+               <p className='text-white font-lg mt-2'>
+                <ToastContainer />
+               </p>
+
               </form>
             
             <p className='text-white mt-2'>Already a member?
@@ -110,7 +142,7 @@ const Register = () => {
                     <BsGoogle  />
                     </p>
                     <p className='text-lg '>
-                    <input type={'submit'}  value='Sign in with Google' />
+                    <input type={'submit'}  onClick={() => signInWithGoogle()}  value='Sign in with Google' />
                     </p>
                    
                    
