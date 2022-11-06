@@ -3,15 +3,21 @@ import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { BsGoogle } from "react-icons/bs";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-import { toast, ToastContainer } from "react-toastify";
+// import { toast, ToastContainer } from "react-toastify";
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, hookError] =
     useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
+      auth);
 
   const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
 
@@ -71,25 +77,26 @@ const Login = () => {
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":
-          toast("Please provide a valid email");
+          toast.error("Please provide a valid email");
           break;
         case "auth/popup-closed-by-user":
-          toast("Pop-up Closed By User");
+          toast.error("Pop-up Closed By User");
           break;
 
         case "auth/invalid-password":
-          toast("Wrong password. Intruder!!");
+          toast.error("Wrong password. Intruder!!");
           break;
         default:
-          toast("something went wrong");
+          toast.error("something went wrong");
       }
     }
   }, [hookError, googleError]);
 
   return (
     <div className="login-bg flex justify-center items-center  ">
-      <div className="login-form lg:m-12 m-16 p-6 lg:py-12 lg:px-20 rounded ">
-        <h1 className="lg:text-4xl text-2xl font-bold text-white mb-5">
+       
+      <div className="login-form lg:m-12 m-16 p-4 lg:py-8 lg:px-16 rounded ">
+        <h1 className="lg:text-4xl text-2xl font-bold text-white mb-3">
           LOG IN
         </h1>
         <form onSubmit={handleLogin} className=" flex flex-col">
@@ -113,7 +120,7 @@ const Login = () => {
             value="Sign In"
           />
           <p className="text-white font-lg mt-2">
-            <ToastContainer />
+           {/* toast container */}
           </p>
         </form>
 
@@ -142,7 +149,18 @@ const Login = () => {
             />
           </p>
         </div>
+        <p className="text-white font-bold mt-2">Forgot password? <button className="text-black register"
+        onClick={async () => {
+          await sendPasswordResetEmail(userInfo.email);
+          toast.success('Sent email');
+        }}
+      >
+       Reset
+      </button> </p>
       </div>
+      <Toaster position="top-right"
+  reverseOrder={false} />
+      {/* <ToastContainer  /> */}
     </div>
   );
 };
