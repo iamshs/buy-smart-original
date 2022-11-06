@@ -4,7 +4,8 @@ import { BsGoogle } from 'react-icons/bs';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import './Register.css'
-import { toast, ToastContainer } from 'react-toastify';
+
+import { Toaster , toast } from 'react-hot-toast';
 
 const Register = () => {
 
@@ -13,7 +14,7 @@ const Register = () => {
         user,
        
         hookError,
-      ] = useCreateUserWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth ,{sendEmailVerification:true});
       const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
 
     const [userInfo , setUserInfo] = useState ({
@@ -69,7 +70,7 @@ const Register = () => {
 
     const navigate = useNavigate()
 
-    if (user){
+    if (user || googleUser){
         navigate('/')
     }
     
@@ -85,17 +86,17 @@ const Register = () => {
         if (error) {
             switch (error?.code) {
                 case "auth/invalid-email":
-                    toast("Please provide a valid email");
+                    toast.error("Please provide a valid email");
                     break;
                 case "auth/popup-closed-by-user":
-                    toast("Pop-up Closed By User");
+                    toast.error("Pop-up Closed By User");
                     break;
       
                 case "auth/invalid-password":
-                    toast("Wrong password. Intruder!!")
+                    toast.error("Wrong password. Intruder!!")
                     break;
                 default:
-                    toast("something went wrong")
+                    toast.error("something went wrong")
             }
         }
       }, [hookError, googleError])
@@ -103,8 +104,8 @@ const Register = () => {
     return (
         <div className='login-bg flex justify-center items-center  '>
 
-            <div className='login-form lg:m-12 m-16 p-6 lg:py-12 lg:px-20 rounded '>
-              <h1 className='lg:text-3xl text-2xl font-bold text-white mb-5'>REGISTER NOW</h1>
+            <div className='login-form lg:m-12 m-16 p-6 lg:py-10 lg:px-16 rounded '>
+              <h1 className='lg:text-2xl text-xl font-bold text-white mb-5'>REGISTER NOW</h1>
               <form onSubmit={handleRegister} className=' flex flex-col'>
 
                
@@ -117,12 +118,10 @@ const Register = () => {
                 <input type={'password'} className='auth-input ' onChange={handleConfirmPass}
                  placeholder='Confirm Password..' />
                    { errors?.confirmPass && <p className='error-message' > {errors.confirmPass} </p> }
-                <input type={'submit'} className='auth-submit text-xl font-bold py-2 mt-4 rounded'
+                <input type={'submit'} className='auth-submit text-md font-bold py-2 mt-4 rounded'
                  value='Sign Up' />
 
-               <p className='text-white font-lg mt-2'>
-                <ToastContainer />
-               </p>
+               
 
               </form>
             
@@ -141,7 +140,7 @@ const Register = () => {
                 <p className='text-2xl'>
                     <BsGoogle  />
                     </p>
-                    <p className='text-lg '>
+                    <p className='text-md '>
                     <input type={'submit'}  onClick={() => signInWithGoogle()}  value='Sign in with Google' />
                     </p>
                    
@@ -150,6 +149,7 @@ const Register = () => {
                 </div>
 
             </div>
+            <Toaster position='top-right' />
             
         </div>
     );

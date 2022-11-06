@@ -15,10 +15,17 @@
     background-attachment: unset;
   }
 }
+.bgi-btn{
+  background: rgb(10,182,171);
+background: radial-gradient(circle, rgb(5, 135, 127) 0%, rgba(6,59,55,1) 100%);
+  color: rgb(255, 255, 255);
+
+}
 
 .bgi-btn:hover {
-  background-color: rgb(2 132 199);
-  color: rgb(0, 0, 0);
+  background: rgb(8,139,131);
+  background: radial-gradient(circle, rgb(3, 94, 88) 0%, rgba(3,43,40,1) 100%);
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 767px) {

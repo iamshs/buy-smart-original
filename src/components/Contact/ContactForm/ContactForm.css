@@ -11,13 +11,13 @@
 
 .input-submit{
     background: rgb(25,80,83);
-    background: linear-gradient(90deg, rgba(25,80,83,1) 19%, rgba(6,95,105,1) 95%);
+    background: linear-gradient(90deg, rgb(49, 143, 148) 19%, rgb(1, 81, 90) 95%);
     color: white;
 }
 
 .input-submit:hover{
     background: rgb(19,56,59);
-    background: linear-gradient(90deg, rgba(19,56,59,1) 19%, rgba(1,69,78,1) 95%);
+    background: linear-gradient(90deg, rgb(25, 70, 74) 19%, rgb(2, 84, 95) 95%);
 }
 
 

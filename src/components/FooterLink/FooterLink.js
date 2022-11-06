@@ -63,7 +63,7 @@ const FooterLink = () => {
               placeholder="Your Email Address.."
               className="input input-bordered focus:ring focus:ring-black w-full max-w-xs my-8"
             />
-            <button className="btn home-btn text-white mx-4 py-0.5 border-0 rounded-none px-8  font-bold">SUBSCRIBE</button>
+            <button className="btn bgi-btn text-white mx-4 py-0.5 border-0 rounded-none px-8  font-bold">SUBSCRIBE</button>
           </div>
           {/* subscribe---------end */}
         </div>

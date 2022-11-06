@@ -116,7 +116,7 @@ const Login = () => {
           {errors?.pass && <p className="error-message"> {errors.pass} </p>}
           <input
             type={"submit"}
-            className="auth-submit text-xl font-bold py-2 mt-4 rounded"
+            className="auth-submit text-md font-bold py-2 mt-4 rounded"
             value="Sign In"
           />
           <p className="text-white font-lg mt-2">
@@ -141,7 +141,7 @@ const Login = () => {
           <p className="text-2xl">
             <BsGoogle />
           </p>
-          <p className="text-lg ">
+          <p className="text-md ">
             <input
               type={"submit"}
               onClick={() => signInWithGoogle()}

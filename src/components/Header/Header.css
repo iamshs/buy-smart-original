@@ -1,5 +1,4 @@
 .nav{
-    background: rgb(7,98,108);
-background: linear-gradient(90deg,
- rgba(7,98,108,0.8748541652989321) 4%, rgba(4,57,60,0.9308765742625175) 55%);
+    background: rgb(11,200,218);
+    background: radial-gradient(circle, rgba(11,200,218,1) 0%, rgba(2,64,56,1) 100%);
 }
