@@ -42,6 +42,7 @@
   {
     "id": 6,
     "image": "https://images.pexels.com/photos/3025950/pexels-photo-3025950.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "name":"Lotto",
     "price": "$106.54",
     "gender": "Male",
     "rate": "Ms"
@@ -73,6 +74,7 @@
   {
     "id": 10,
     "image": "https://images.unsplash.com/photo-1576672843344-f01907a9d40c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+    "name":"Toyota",
     "price": "$122.31",
     "gender": "Genderfluid",
     "rate": "Honorable"

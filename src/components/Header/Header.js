@@ -5,6 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
 import { FaUserCircle } from 'react-icons/fa';
+import {BsCartCheckFill} from 'react-icons/bs';
 import { RiLogoutCircleFill } from 'react-icons/ri';
 
 const Header = () => {
@@ -29,7 +30,13 @@ const Header = () => {
     <li className='text-lg font-bold'>
       <Link to={'/contact'} >CONTACT</Link>
     </li>
-    <li className='text-4xl'>
+    <li className='text-3xl font-bold'>
+      <Link to={'/addToCart'} >
+        <span> <BsCartCheckFill />  </span>
+        
+      </Link>
+    </li>
+    <li className='text-3xl'>
     {user ? <button   onClick={logout} >
       <RiLogoutCircleFill/>
     </button> : <Link to="/login">

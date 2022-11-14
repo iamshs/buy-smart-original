@@ -28,8 +28,8 @@ const Products = () => {
 
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 lg:gap-5 gap-10">
-        {products.map((p) => (
+      <div className="grid grid-cols-1 lg:grid-cols-4  gap-10">
+        {products.slice(0,8).map((p) => (
           <Product key={p.id} p={p}></Product>
         ))}
       </div>

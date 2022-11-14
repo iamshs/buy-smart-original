@@ -1,0 +1,12 @@
+.cart-btn{
+    background: rgb(23, 32, 33);
+background: radial-gradient(circle, rgb(9, 17, 18) 0%, rgb(33, 40, 39) 100%);
+color: white;
+
+}
+
+.cart-btn:hover{
+    background: rgb(255, 255, 255);
+color: black;
+border: 1px solid black;
+}
