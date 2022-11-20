@@ -25,6 +25,9 @@ const Header = () => {
       <Link to={'/'}  >HOME</Link>
     </li>
     <li className='text-lg font-bold'>
+      <Link to={'/everything'}  >EVERYTHING</Link>
+    </li>
+    <li className='text-lg font-bold'>
       <Link to={'/about'} >ABOUT</Link>
     </li>
     <li className='text-lg font-bold'>

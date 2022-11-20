@@ -1,6 +1,6 @@
 import React from "react";
 import './Product.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Product = ({ p }) => {
@@ -8,10 +8,9 @@ const Product = ({ p }) => {
   const { gender, image, name, price,id} = p;
   const navigate = useNavigate()
 
-
- const productDeliver = id =>{
-  navigate(`/productDetails/${id}`)
- }
+  const handleProductDetails = id =>{
+      navigate(`/productDetails/${id}`)
+  }
 
   return (
     <div className="card bg-white  shadow-sm p-10 lg:p-1 ">
@@ -35,7 +34,7 @@ const Product = ({ p }) => {
         <input type="radio" name="rating-1" className="mask mask-star checked" />
         <input type="radio" name="rating-1" className="mask mask-star checked" />
       </div>
-      <button className="cart-btn mt-6 mb-3 py-4 font-bold " onClick={()=>productDeliver(id)} >ADD TO CART</button>
+      <button  onClick={() => handleProductDetails(p.id)} className="cart-btn mt-6 mb-3 py-4 font-bold text-center" >BUY NOW</button>
     </div>
   );
 };

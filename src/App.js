@@ -10,10 +10,11 @@ import Register from "./components/Authentication/Register/Register";
 import AddToCart from "./components/AddToCart/AddToCart";
 import useProduct from "./hooks/useProduct";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
+import Everything from "./components/Everything/Everything";
 
 
 function App() {
-//  const [products] = useProduct()
+ const [products] = useProduct()
   return (
     <div>
       <Header></Header>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/productDetails/:id" element={<ProductDetails />} ></Route>
         <Route path="/addToCart" element={<AddToCart/>}></Route>
+        <Route path="everything" element={<Everything products={products} ></Everything>}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
      
