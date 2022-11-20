@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
+import useProduct from "../../hooks/useProduct";
 
 import Product from "../Product/Product";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    fetch("products.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setProducts(data);
-        console.log(data);
-      });
-  }, []);
+  const [products] = useProduct()
+  console.log(products)
 
   return (
     <div className="bg-gradient-to-r from-slate-100 to-slate-100 min-h-screen pt-5 lg:pt-16 pb-10 lg:pb-20">
