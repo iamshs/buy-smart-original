@@ -78,5 +78,21 @@
     "price": "$122.31",
     "gender": "Genderfluid",
     "rate": "Honorable"
+  },
+  {
+    "id": 11,
+    "image": "https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "name":"Watch-gt",
+    "price": "$122.31",
+    "gender": "Genderfluid",
+    "rate": "Honorable"
+  },
+  {
+    "id": 12,
+    "image": "https://images.pexels.com/photos/3646165/pexels-photo-3646165.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "name":"Smart Watch",
+    "price": "$122.31",
+    "gender": "Genderfluid",
+    "rate": "Honorable"
   }
 ]
