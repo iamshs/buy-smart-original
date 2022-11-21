@@ -5,7 +5,8 @@
     "name": "Limon",
     "price": "$148.26",
     "gender": "Female",
-    "rate": "Dr"
+    "rate": "Dr",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "name": "Leer",
     "price": "$146.81",
     "gender": "Male",
-    "rate": "Mrs"
+    "rate": "Mrs",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "name": "Niemetz",
     "price": "$147.16",
     "gender": "female",
-    "rate": "Mrs"
+    "rate": "Mrs",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "name": "Folling",
     "price": "$116.27",
     "gender": "Male",
-    "rate": "Mr"
+    "rate": "Mr",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 5,
@@ -37,15 +41,17 @@
     "name": "Moodey",
     "price": "$130.14",
     "gender": "Male",
-    "rate": "Ms"
+    "rate": "Ms",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 6,
     "image": "https://images.pexels.com/photos/3025950/pexels-photo-3025950.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "name":"Lotto",
+    "name": "Lotto",
     "price": "$106.54",
     "gender": "Male",
-    "rate": "Ms"
+    "rate": "Ms",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "name": "MacMearty",
     "price": "$104.65",
     "gender": "Male",
-    "rate": "Dr"
+    "rate": "Dr",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "name": "Dowber",
     "price": "$104.65",
     "gender": "Polygender",
-    "rate": "Rev"
+    "rate": "Rev",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 9,
@@ -69,30 +77,34 @@
     "name": "Thorn",
     "price": "$124.56",
     "gender": "Male",
-    "rate": "Dr"
+    "rate": "Dr",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 10,
     "image": "https://images.unsplash.com/photo-1576672843344-f01907a9d40c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-    "name":"Toyota",
+    "name": "Toyota",
     "price": "$122.31",
     "gender": "Genderfluid",
-    "rate": "Honorable"
+    "rate": "Honorable",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 11,
     "image": "https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "name":"Watch-gt",
+    "name": "Watch-gt",
     "price": "$122.31",
     "gender": "Genderfluid",
-    "rate": "Honorable"
+    "rate": "Honorable",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
     "id": 12,
     "image": "https://images.pexels.com/photos/3646165/pexels-photo-3646165.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "name":"Smart Watch",
+    "name": "Smart Watch",
     "price": "$122.31",
     "gender": "Genderfluid",
-    "rate": "Honorable"
+    "rate": "Honorable",
+    "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   }
 ]

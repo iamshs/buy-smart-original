@@ -5,7 +5,7 @@ const ProductDetails = () => {
     const {id} = useParams()
     return (
         <div>
-         <h2>Product Details: {id} </h2>
+         <h2 className='text-2xl py-10'>Product Details: {id} </h2>
 
         </div>
     );

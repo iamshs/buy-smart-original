@@ -8,18 +8,18 @@ const Everything = ({ products }) => {
     }
   return (
     <div>
-      <h2 className="text-3xl font-bold pt-16 ml-2 text-center">
+      <h2 className="lg:text-3xl text-2xl font-bold lg:pt-16 pt-8  ml-2 text-center">
         Scroll to visit all Products
       </h2>
-      <div className="flex items-center justify-center ml-2 mb-14 py-2 lg:py-4">
+      <div className="flex items-center justify-center ml-2 lg:mb-14 mb-6 py-2 lg:py-4">
         <div style={{ height: "3px" }} className="bg-sky-600 w-32"></div>
       </div>
-      <div className="grid lg:grid-cols-4 grid-cols-1 gap-8 p-4 bg-slate-200">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 p-4 bg-slate-200">
         {products.map((p) => (
           <div key={p.id} className="card bg-white  shadow-sm p-10 lg:p-1">
             <figure className="p-0">
               <img
-                className="lg:h-64 h-96 lg:w-full w-96"
+                className="lg:h-72 h-96 lg:w-full w-96"
                 src={p.image}
                 alt="Shoes"
               />
@@ -31,40 +31,13 @@ const Everything = ({ products }) => {
               <p className="text-sm font-thin my-1"> {p.gender} </p>
               <h2 className="text-lg font-semibold"> {p.price} </h2>
             </div>
-            <div className="rating">
-              <input
-                type="radio"
-                name="rating-1"
-                className="mask mask-star checked"
-              />
-              <input
-                type="radio"
-                name="rating-1"
-                className="mask mask-star"
-                checked
-              />
-              <input
-                type="radio"
-                name="rating-1"
-                className="mask mask-star checked"
-              />
-              <input
-                type="radio"
-                name="rating-1"
-                className="mask mask-star checked"
-              />
-              <input
-                type="radio"
-                name="rating-1"
-                className="mask mask-star checked"
-              />
-            </div>
+           <Link className="bgi-btn text-center py-4" >ADD TO CART</Link>
             <p>
               <button
                 className="cart-btn mt-2 mb-3 py-4 w-full font-bold text-center"
                 onClick={() => handleProductDetails(p.id)}
               >
-             BUY NOW
+             VIEW DETAILS
               </button>
             </p>
           </div>
