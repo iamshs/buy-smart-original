@@ -22,7 +22,7 @@ const Product = ({ p }) => {
         <p className="text-sm font-thin my-2"> {gender} </p>
         <h2 className="text-lg font-semibold"> {price} </h2>
       </div>
-      <Link className="bgi-btn text-center py-4" >ADD TO CART</Link>
+      <Link className="bgi-btn text-center py-4" to={'/everything'} >BUY NOW</Link>
       <button  onClick={() => handleProductDetails(p.id)} className="cart-btn mt-6 mb-3 py-4 font-bold text-center" >VIEW DETAILS</button>
     </div>
   );

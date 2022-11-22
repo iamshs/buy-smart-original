@@ -6,12 +6,12 @@ import Products from '../Products/Products';
 import Service from '../Service/Service';
 
 
-const Home = () => {
+const Home = ({products }) => {
     return (
         <div>
             <Banner />
             <Card />
-            <Products />
+            <Products products={products} />
             <Offer />
             <Service />
         </div>

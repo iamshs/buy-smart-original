@@ -11,21 +11,37 @@ import AddToCart from "./components/AddToCart/AddToCart";
 import useProduct from "./hooks/useProduct";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import Everything from "./components/Everything/Everything";
+import { useState } from "react";
 
 
 function App() {
  const [products] = useProduct()
+ const [cartItems , setCartItems] = useState([]);
+ 
+ const handleAddProducts = product =>{
+  const productExist = cartItems.find(item=> item.id === product.id)
+  if(productExist){
+    setCartItems(cartItems.map((item)=>item.id === product.id ?
+     {...productExist , quantity:productExist.quantity+1}:item ))
+  }
+  else{
+    setCartItems([...cartItems,{...product, quantity:1 }])
+  }
+ }
+
   return (
     <div>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/" element={<Home products={products}  > </Home>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/productDetails/:id" element={<ProductDetails />} ></Route>
-        <Route path="/addToCart" element={<AddToCart/>}></Route>
-        <Route path="everything" element={<Everything products={products} ></Everything>}></Route>
+        <Route path="/addToCart" element={<AddToCart cartItems={cartItems} 
+        handleAddProducts={handleAddProducts} />}></Route>
+        <Route path="everything" element={<Everything products={products}
+         handleAddProducts={handleAddProducts}   ></Everything>}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
      

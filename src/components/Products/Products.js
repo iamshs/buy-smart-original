@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import useProduct from "../../hooks/useProduct";
+import React from "react";
+
 
 import Product from "../Product/Product";
 
-const Products = () => {
-  const [products] = useProduct()
-  console.log(products)
+const Products = ({products}) => {
+  
 
   return (
     <div className="bg-gradient-to-r from-slate-100 to-slate-100 min-h-screen pt-5 lg:pt-16 pb-10 lg:pb-20">

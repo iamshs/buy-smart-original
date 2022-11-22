@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const Everything = ({ products }) => {
+const Everything = ({ products , handleAddProducts }) => {
     const navigate = useNavigate()
     const handleProductDetails = id =>{
         navigate(`/productDetails/${id}`)
@@ -31,7 +31,11 @@ const Everything = ({ products }) => {
               <p className="text-sm font-thin my-1"> {p.gender} </p>
               <h2 className="text-lg font-semibold"> {p.price} </h2>
             </div>
-           <Link className="bgi-btn text-center py-4" >ADD TO CART</Link>
+         
+            <button className="bgi-btn text-center py-4 font-bold" onClick={()=> handleAddProducts(p) } >
+              ADD TO CART
+            </button>
+          
             <p>
               <button
                 className="cart-btn mt-2 mb-3 py-4 w-full font-bold text-center"
