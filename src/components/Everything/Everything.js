@@ -21,7 +21,7 @@ const Everything = ({ products , handleAddProducts }) => {
               <img
                 className="lg:h-72 h-96 lg:w-full w-96"
                 src={p.image}
-                alt="Shoes"
+                alt={p.name}
               />
             </figure>
             <div className="pl-1 pb-3 mt-3">
@@ -29,7 +29,7 @@ const Everything = ({ products , handleAddProducts }) => {
                 {p.name}
               </h2>
               <p className="text-sm font-thin my-1"> {p.gender} </p>
-              <h2 className="text-lg font-semibold"> {p.price} </h2>
+              <h2 className="text-lg font-semibold"> ${p.price} </h2>
             </div>
          
             <button className="bgi-btn text-center py-4 font-bold" onClick={()=> handleAddProducts(p) } >

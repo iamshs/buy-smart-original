@@ -29,6 +29,17 @@ function App() {
   }
  }
 
+ const handleRemove = product =>{
+  const productExist = cartItems.find(item=> item.id === product.id)
+  if(productExist.quantity === 1){
+    setCartItems(cartItems.filter((item)=>item.id !== product.id ) )  
+  }
+  else{
+    setCartItems(cartItems.map((item)=>item.id === product.id ?
+    {...productExist , quantity:productExist.quantity-1}:item )) 
+  }
+ }
+
   return (
     <div>
       <Header></Header>
@@ -39,7 +50,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/productDetails/:id" element={<ProductDetails />} ></Route>
         <Route path="/addToCart" element={<AddToCart cartItems={cartItems} 
-        handleAddProducts={handleAddProducts} />}></Route>
+        handleAddProducts={handleAddProducts} handleRemove={handleRemove} />}></Route>
         <Route path="everything" element={<Everything products={products}
          handleAddProducts={handleAddProducts}   ></Everything>}></Route>
         <Route path="/register" element={<Register />}></Route>
