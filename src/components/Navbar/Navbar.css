@@ -1,0 +1,12 @@
+.nav{
+    background: rgb(11,200,218);
+    background: radial-gradient(circle, rgba(11,200,218,1) 0%, rgb(2, 84, 73) 100%);
+}
+
+
+@media screen and (max-width:767px) {
+   .nav{
+    background: rgb(11,200,218);
+    background: radial-gradient(circle, rgba(11,200,218,1) 0%, rgb(2, 84, 73) 100%);  
+   }
+}

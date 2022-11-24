@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Login.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BsGoogle } from "react-icons/bs";
 import {
   useSendPasswordResetEmail,
@@ -61,9 +61,15 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  if (user || googleUser) {
-    navigate("/");
-  }
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
+
+   useEffect(()=>{
+     if (user || googleUser) {
+      navigate(from, { replace: true });
+    }
+    
+   },[user ,googleUser,from,navigate])
 
   const handleLogin = (e) => {
     e.preventDefault();

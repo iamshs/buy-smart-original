@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import bg from "../../assets/bg.jpg";
-import Header from "../Header/Header";
+
 
 const Banner = () => {
   return (

@@ -16,7 +16,8 @@ const AddToCart = ({cartItems , handleAddProducts , handleRemove, handleAllCartP
           <p className='font-semibold hover:text-teal-900 hover:font-bold'>Continue Shopping</p>
         </div></Link>
         <div className='flex justify-end clear '>
-          <button className='clear-btn ' onClick={handleAllCartProducts}>Clear All</button>
+          {cartItems.length >=0 &&
+           (<button className='clear-btn ' onClick={handleAllCartProducts}>Clear All</button>)}
          </div>
         <div className='cart-items text-black'>
           

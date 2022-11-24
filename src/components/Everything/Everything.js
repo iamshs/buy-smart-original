@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const Everything = ({ products , handleAddProducts }) => {
     const navigate = useNavigate()
@@ -8,10 +8,10 @@ const Everything = ({ products , handleAddProducts }) => {
     }
   return (
     <div>
-      <h2 className="lg:text-3xl text-2xl font-bold lg:pt-16 pt-8  ml-2 text-center">
+      <h2 className="lg:text-3xl text-2xl font-bold lg:pt-8 pt-4  ml-2 text-center">
         Scroll to visit all Products
       </h2>
-      <div className="flex items-center justify-center ml-2 lg:mb-14 mb-6 py-2 lg:py-4">
+      <div className="flex items-center justify-center ml-2 lg:mb-8 mb-4 py-2 lg:py-4">
         <div style={{ height: "3px" }} className="bg-sky-600 w-32"></div>
       </div>
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 p-4 bg-slate-200">
