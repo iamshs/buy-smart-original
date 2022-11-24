@@ -1,15 +1,25 @@
 import React from 'react';
 import { AiFillPlusCircle} from 'react-icons/ai';
 import { AiFillMinusSquare} from 'react-icons/ai';
+import { BsArrowLeft} from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 import './AddToCart.css'
 
 
 const AddToCart = ({cartItems , handleAddProducts , handleRemove}) => {
     const totalPrice = cartItems.reduce((price,item)=> price + item.quantity * item.price , 0 )
     return (
+        <>
+        
+       <Link to={'/everything'} > <div className='flex items-center pl-2 pt-5 hover:text-teal-900 '>
+          <p className='text-lg mr-1 '> <BsArrowLeft/> </p>
+          <p className='font-semibold'>Continue Shopping</p>
+        </div></Link>
+
         <div className='cart-items text-black'>
+          
            
-          <div className='flex justify-center font-semibold text-xl py-3 border-b-2 border-black'>  Added Item cart</div>
+          <div className='flex justify-center font-semibold text-xl py-3 border-b border-black'>  Added Item cart</div>
 
             {cartItems.length ===0 && (<div className='text-2xl font-bold flex justify-center'>No Items added</div>)}
 
@@ -20,10 +30,10 @@ const AddToCart = ({cartItems , handleAddProducts , handleRemove}) => {
              {item.name}
              </div>
             <div className='lg:w-32 w-20'>
-                <button className=' lg:text-2xl text-lg mx-1' onClick={()=>handleAddProducts(item)} >
+                <button className=' lg:text-2xl text-lg mx-1 hover:text-teal-900' onClick={()=>handleAddProducts(item)} >
                     <AiFillPlusCircle />
                 </button>
-                <button className='lg:text-2xl text-lg mx-1' onClick={()=>handleRemove(item)} >
+                <button className='lg:text-2xl text-lg mx-1  hover:text-teal-900' onClick={()=>handleRemove(item)} >
                     <AiFillMinusSquare />
                 </button>
             </div>
@@ -39,11 +49,12 @@ const AddToCart = ({cartItems , handleAddProducts , handleRemove}) => {
   
 
           </div>
-          <div className='lg:pl-14 pl-2 py-3 border-t-2 border-black font-bold text-xl'>Total price: 
+          <div className='lg:pl-14 pl-2 py-3 border-t-1 border-black font-bold text-xl'>Total price: 
          ${totalPrice} 
   </div>
 
             </div>
+        </>
        
     );
 };
