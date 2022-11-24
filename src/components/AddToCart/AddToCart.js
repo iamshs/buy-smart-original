@@ -1,23 +1,26 @@
 import React from 'react';
-import { AiFillPlusCircle} from 'react-icons/ai';
+import { AiFillPlusSquare} from 'react-icons/ai';
 import { AiFillMinusSquare} from 'react-icons/ai';
 import { BsArrowLeft} from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import './AddToCart.css'
 
 
-const AddToCart = ({cartItems , handleAddProducts , handleRemove}) => {
+const AddToCart = ({cartItems , handleAddProducts , handleRemove, handleAllCartProducts}) => {
     const totalPrice = cartItems.reduce((price,item)=> price + item.quantity * item.price , 0 )
     return (
         <>
         
-       <Link to={'/everything'} > <div className='flex items-center pl-2 pt-5 hover:text-teal-900 '>
+       <Link to={'/everything'} > <div className='flex items-center pl-2 pt-5  '>
           <p className='text-lg mr-1 '> <BsArrowLeft/> </p>
-          <p className='font-semibold'>Continue Shopping</p>
+          <p className='font-semibold hover:text-teal-900 hover:font-bold'>Continue Shopping</p>
         </div></Link>
-
+        <div className='flex justify-end clear '>
+          <button className='clear-btn ' onClick={handleAllCartProducts}>Clear All</button>
+         </div>
         <div className='cart-items text-black'>
           
+        
            
           <div className='flex justify-center font-semibold text-xl py-3 border-b border-black'>  Added Item cart</div>
 
@@ -30,10 +33,10 @@ const AddToCart = ({cartItems , handleAddProducts , handleRemove}) => {
              {item.name}
              </div>
             <div className='lg:w-32 w-20'>
-                <button className=' lg:text-2xl text-lg mx-1 hover:text-teal-900' onClick={()=>handleAddProducts(item)} >
-                    <AiFillPlusCircle />
+                <button className=' lg:text-2xl text-lg mx-1 hover:text-green-900' onClick={()=>handleAddProducts(item)} >
+                    <AiFillPlusSquare />
                 </button>
-                <button className='lg:text-2xl text-lg mx-1  hover:text-teal-900' onClick={()=>handleRemove(item)} >
+                <button className='lg:text-2xl text-lg mx-1  hover:text-red-600' onClick={()=>handleRemove(item)} >
                     <AiFillMinusSquare />
                 </button>
             </div>

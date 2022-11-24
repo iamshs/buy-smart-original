@@ -40,6 +40,10 @@ function App() {
   }
  }
 
+ const handleAllCartProducts = ()=>{
+  setCartItems([])
+ }
+
   return (
     <div>
       <Header></Header>
@@ -50,7 +54,9 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/productDetails/:id" element={<ProductDetails />} ></Route>
         <Route path="/addToCart" element={<AddToCart cartItems={cartItems} 
-        handleAddProducts={handleAddProducts} handleRemove={handleRemove} />}></Route>
+        handleAddProducts={handleAddProducts}
+         handleRemove={handleRemove}
+          handleAllCartProducts={handleAllCartProducts} />}></Route>
         <Route path="everything" element={<Everything products={products}
          handleAddProducts={handleAddProducts}   ></Everything>}></Route>
         <Route path="/register" element={<Register />}></Route>

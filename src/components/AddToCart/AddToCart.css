@@ -1,16 +1,36 @@
 .cart-items{
     background-color: #ebf4f4b8;
    
-margin: 2% 20%;
+margin: 0 20%;
 border: 1px solid black;
 display: grid;
 grid-template-columns: repeat(1 1fr);
 gap: 25px;
 }
+.clear{
+    margin: 2px 20%;
+}
+.clear-btn{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, 
+    rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+    color: #fff;
+    padding: 4px 14px;
+    font-weight: 600;
+}
+
+.clear-btn:hover{
+    background: rgb(244,132,76);
+background: radial-gradient(circle, rgba(244,132,76,1) 0%, rgba(251,46,54,1) 100%);
+
+}
 
 @media screen and (max-width:767px) {
 
     .cart-items{
+        margin: 2% 2%;
+        
+    }
+    .clear{
         margin: 2% 2%;
         
     }
