@@ -14,17 +14,17 @@ const Everything = ({ products , handleAddProducts }) => {
       <div className="flex items-center justify-center ml-2 lg:mb-8 mb-4 py-2 lg:py-4">
         <div style={{ height: "3px" }} className="bg-sky-600 w-32"></div>
       </div>
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 p-4 bg-slate-200">
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-8 p-4 bg-slate-200">
         {products.map((p) => (
           <div key={p.id} className="card bg-white  shadow-sm p-10 lg:p-1">
             <figure className="p-0">
               <img
-                className="lg:h-72 h-96 lg:w-full w-96"
+                className="lg:h-48 h-96 lg:w-full w-72"
                 src={p.image}
                 alt={p.name}
               />
             </figure>
-            <div className="pl-1 pb-3 mt-3">
+            <div className="pl-1 pb-3 mt-1">
               <h2 className="card-title text-2xl font-bold text-black">
                 {p.name}
               </h2>
@@ -32,13 +32,13 @@ const Everything = ({ products , handleAddProducts }) => {
               <h2 className="text-lg font-semibold"> ${p.price} </h2>
             </div>
          
-            <button className="bgi-btn text-center py-4 font-bold" onClick={()=> handleAddProducts(p) } >
+            <button className="bgi-btn text-center py-3 text-white font-bold" onClick={()=> handleAddProducts(p) } >
               ADD TO CART
             </button>
           
             <p>
               <button
-                className="cart-btn mt-2 mb-3 py-4 w-full font-bold text-center"
+                className="cart-btn mt-2 mb-3 py-3 w-full font-bold text-center"
                 onClick={() => handleProductDetails(p.id)}
               >
              VIEW DETAILS

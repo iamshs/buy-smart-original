@@ -1,12 +1,6 @@
 .nav{
-    background: rgb(11,200,218);
-    background: radial-gradient(circle, rgba(11,200,218,1) 0%, rgb(2, 84, 73) 100%);
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #30aef8 0%, #023661 100%);
 }
 
 
-@media screen and (max-width:767px) {
-   .nav{
-    background: rgb(11,200,218);
-    background: radial-gradient(circle, rgba(11,200,218,1) 0%, rgb(2, 84, 73) 100%);  
-   }
-}

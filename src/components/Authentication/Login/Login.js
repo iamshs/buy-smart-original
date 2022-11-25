@@ -101,14 +101,14 @@ const Login = () => {
   return (
     <div className="login-bg flex justify-center items-center  ">
        
-      <div className="login-form lg:m-12 m-16 p-4 lg:py-8 lg:px-16 rounded ">
-        <h1 className="lg:text-4xl text-2xl font-bold text-white mb-3">
+      <div className="login-form lg:m-12 m-16 px-6 py-3 lg:py-8 lg:px-16 rounded ">
+        <h1 className="lg:text-4xl text-xl font-bold text-white mb-3">
           LOG IN
         </h1>
         <form onSubmit={handleLogin} className=" flex flex-col">
           <input
             type={"email"}
-            className="auth-input mb-3"
+            className="auth-input mb-1"
             onChange={handleEmail}
             placeholder="Your Email.."
           />
@@ -122,15 +122,13 @@ const Login = () => {
           {errors?.pass && <p className="error-message"> {errors.pass} </p>}
           <input
             type={"submit"}
-            className="auth-submit text-md font-bold py-2 mt-4 rounded"
-            value="Sign In"
+            className="auth-submit text-md font-bold py-2 lg:mt-4 mt-1 rounded"
+            value="SIGN IN"
           />
-          <p className="text-white font-lg mt-2">
-           {/* toast container */}
-          </p>
+         
         </form>
 
-        <p className="text-white mt-2">
+        <p className="text-white mt-1">
           Not a member?
           <span className="font-bold ml-1 text-black register">
             <Link to={"/register"}>Register Now</Link>
@@ -143,19 +141,19 @@ const Login = () => {
           <div style={{ height: "2px" }} className="bg-white w-24 "></div>
         </div>
 
-        <div className="auth-submit font-bold py-2 mt-4 flex items-center justify-around rounded">
+        <div className="auth-submit font-bold py-2 mt-1 lg:mt-4 flex items-center justify-around rounded">
           <p className="text-2xl">
             <BsGoogle />
           </p>
-          <p className="text-md ">
+          <p className="text-sm ">
             <input
               type={"submit"}
               onClick={() => signInWithGoogle()}
-              value="Sign in with Google"
+              value="SIGN IN WITH GOOGLE"
             />
           </p>
         </div>
-        <p className="text-white font-bold mt-2">Forgot password? <button className="text-black register"
+        <p className="text-white font-bold mt-1 lg:mt-2">Forgot password? <button className="text-black register"
         onClick={async () => {
           await sendPasswordResetEmail(userInfo.email);
           toast.success('Sent email');

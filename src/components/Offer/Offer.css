@@ -15,7 +15,7 @@
     background-attachment: unset;
   }
 }
-.bgi-btn{
+/* .bgi-btn{
   background: rgb(10,182,171);
 background: radial-gradient(circle, rgb(5, 135, 127) 0%, rgba(6,59,55,1) 100%);
   color: rgb(255, 255, 255);
@@ -26,7 +26,7 @@ background: radial-gradient(circle, rgb(5, 135, 127) 0%, rgba(6,59,55,1) 100%);
   background: rgb(8,139,131);
   background: radial-gradient(circle, rgb(3, 94, 88) 0%, rgba(3,43,40,1) 100%);
   color: rgb(255, 255, 255);
-}
+} */
 
 @media screen and (max-width: 767px) {
   .offer-bg {
@@ -39,15 +39,16 @@ background: radial-gradient(circle, rgb(5, 135, 127) 0%, rgba(6,59,55,1) 100%);
 }
 
 .offer-text {
-  background: #11f87d;
-  background: linear-gradient(to right, #1d4e56 14%, #00bab4 58%);
+  background: #ffb4ea;
+  background: linear-gradient(to right, #ddaac6 14%, #fe82df 58%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .offer-percent {
-  background: #11736c;
-  background: linear-gradient(to left, #1d4e56 0%, #02a19c 100%);
+  /* background: #7ce9ff;
+  background: linear-gradient(to left, #90f4ec 0%, #05e0d9 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: #fff;
 }

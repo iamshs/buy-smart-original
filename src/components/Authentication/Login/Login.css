@@ -8,12 +8,12 @@
 }
 
 .login-form {
-  background: rgb(131, 58, 180);
+  background: rgb(196, 127, 241);
   background: linear-gradient(
     90deg,
-    rgb(177, 57, 10) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
+    rgb(10, 177, 163) 0%,
+    rgb(29, 141, 253) 50%,
+    rgb(69, 173, 252) 100%
   );
 }
 .auth-input {
@@ -36,7 +36,8 @@
 
 .auth-submit:hover{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,
-      rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+      rgb(255, 255, 255) 0.1%, rgb(210, 219, 229) 94.2% );
+      color: black;
 }
 
 .register{

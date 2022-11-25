@@ -9,7 +9,7 @@ const ContactCard = () => {
         <p className="my-3">
           Vestibulum ante ipsum primis in faucibus orci luctus.
         </p>
-        <h2 className="text-xl font-bold text-teal-800">1800 123 4567</h2>
+        <h2 className="text-xl font-bold text-sky-700">1800 123 4567</h2>
       </div>
 
       {/* card----2  */}
@@ -18,7 +18,7 @@ const ContactCard = () => {
         <p className="my-3">
           Vestibulum ante ipsum primis in faucibus orci luctus.
         </p>
-        <h2 className="text-xl font-bold  text-teal-800">1900 223 8899</h2>
+        <h2 className="text-xl font-bold  text-sky-700">1900 223 8899</h2>
       </div>
       {/* card----3  */}
       <div className="bg-base-100 text-center py-6 px-10">
@@ -26,7 +26,7 @@ const ContactCard = () => {
         <p className="my-3">
           Vestibulum ante ipsum primis in faucibus orci luctus.
         </p>
-        <h2 className="text-xl font-bold text-teal-800">returns@mail.com</h2>
+        <h2 className="text-xl font-bold text-sky-700">returns@mail.com</h2>
       </div>
       {/* card----4  */}
 
@@ -35,7 +35,7 @@ const ContactCard = () => {
         <p className="my-3">
           Vestibulum ante ipsum primis in faucibus orci luctus.
         </p>
-        <h2 className="text-xl font-bold text-teal-800">1700 444 5578</h2>
+        <h2 className="text-xl font-bold text-sky-700">1700 444 5578</h2>
       </div>
 
     </div>

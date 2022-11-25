@@ -11,7 +11,7 @@ const Offer = () => {
                 <p className='font-semibold my-8'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
                     luctus nec ullamcorper mattis, pulvinar dapibus leo. </p>
 
-                    <h2 className='text-md lg:text-2xl font-bold text-yellow-400 lg:text-white offer-percent'>Buy This Bikini At 20% Discount, Use Code OFF20</h2>
+                    <h2 className='text-md lg:text-2xl font-bold text-yellow-400 lg:text-white offer-percent'>Buy This T-Shirt At 20% Discount, Use Code OFF20</h2>
                     <button className=' bgi-btn  font-bold text-sm text-white py-3.5 mt-8 px-9'>
                SHOP NOW </button>
             </div>
