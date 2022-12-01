@@ -8,18 +8,19 @@ import {
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
-// import { toast, ToastContainer } from "react-toastify";
+
 import toast, { Toaster } from 'react-hot-toast';
+import Loading from "../../Loading/Loading";
 
 
 
 const Login = () => {
-  const [signInWithEmailAndPassword, user, hookError] =
+  const [signInWithEmailAndPassword, user, hookError,loading] =
     useSignInWithEmailAndPassword(auth);
-    const [sendPasswordResetEmail, sending, resetError] = useSendPasswordResetEmail(
+    const [sendPasswordResetEmail, sending, resetError, ] = useSendPasswordResetEmail(
       auth);
 
-  const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, googleUser, googleError, googleLoading] = useSignInWithGoogle(auth);
 
   const [userInfo, setUserInfo] = useState({
     email: "",
@@ -71,15 +72,20 @@ const Login = () => {
     
    },[user ,googleUser,from,navigate])
 
+   if (loading || sending || googleLoading ){
+    <Loading />
+   }
+
   const handleLogin = (e) => {
     e.preventDefault();
     signInWithEmailAndPassword(userInfo.email, userInfo.pass);
-    console.log(userInfo.email, userInfo.pass);
+    
   };
+
 
   //hook and google error handling
   useEffect(() => {
-    const error = hookError || googleError;
+    const error = hookError || googleError || resetError ;
     if (error) {
       switch (error?.code) {
         case "auth/invalid-email":

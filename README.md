@@ -2,9 +2,7 @@
 
 This project was bootstrapped with [BUY-SMART]( https://buy-smart-bcec1.web.app).
 
-## Available Scripts
-
-In the project directory, you can run:
+## Style by CSS3 , DaisyUi , Tailwind CSS 
 
 ### `npm start`
 

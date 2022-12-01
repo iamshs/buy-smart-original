@@ -5,6 +5,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 import { BsCartCheckFill } from "react-icons/bs";
+import { FaUserCircle } from "react-icons/fa";
+import { RiLogoutCircleLine } from "react-icons/ri";
+
 
 const Navbar = ({ cartItems }) => {
   const [user] = useAuthState(auth);
@@ -13,6 +16,8 @@ const Navbar = ({ cartItems }) => {
     signOut(auth);
     navigate("/login");
   };
+
+  
 
   const menuItems = (
     <>
@@ -31,11 +36,21 @@ const Navbar = ({ cartItems }) => {
     
       <li className="text-lg font-bold">
         {user ? (
-          <button onClick={logout}>SIGN OUT</button>
+          <button onClick={logout}>
+           <span className="text-3xl"> <RiLogoutCircleLine/></span>
+          </button>
         ) : (
-          <Link to="/login">SIGN IN</Link>
+          <Link to="/login">
+            <span className="text-3xl "> <FaUserCircle/> </span>
+          </Link>
         )}
       </li>
+
+      <li>
+        {user ? (<p className="text-lg font-bold text-yellow-200"> {user.displayName} </p>) :""}
+      </li>
+     
+
     </>
   );
   return (

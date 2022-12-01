@@ -12,9 +12,9 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-       
         hookError,
       ] = useCreateUserWithEmailAndPassword(auth ,{sendEmailVerification:true});
+
       const [signInWithGoogle, googleUser, googleError] = useSignInWithGoogle(auth);
 
     const [userInfo , setUserInfo] = useState ({
@@ -78,7 +78,7 @@ const Register = () => {
     const handleRegister = e =>{
         e.preventDefault()
         createUserWithEmailAndPassword(userInfo.email , userInfo.pass)
-        console.log(userInfo.email , userInfo.pass)
+       
      }
 
      useEffect(() => {
