@@ -6,9 +6,9 @@ const FooterLink = () => {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-8 py-16 text-center lg:text-left ">
         <div>
-          <h1 className="font-extrabold italic text-4xl text-black">
+          <h1 className="font-extrabold italic text-4xl text-[#0b87e5] ">
             {" "}
-            buySMART
+            BuySMART
           </h1>
           <h3 className="text-2xl font-bold text-black italic my-12">
             The best look anytime, anywhere.

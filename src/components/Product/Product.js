@@ -2,11 +2,12 @@ import React from "react";
 import './Product.css'
 import { Link, useNavigate } from 'react-router-dom';
 import Loading from "../Loading/Loading";
+import { Rating } from "@mui/material";
 
 
 const Product = ({ p,loading }) => {
   
-  const { gender, image, name, price,_id} = p;
+  const { gender, image, name, price,_id , rate} = p;
   const navigate = useNavigate()
 
   const handleProductDetails = id =>{
@@ -23,7 +24,8 @@ const Product = ({ p,loading }) => {
       <div className="pl-1 pb-3 mt-1">
         <h2 className="card-title font-style text-2xl font-bold text-black">{name}</h2>
         <p className="text-md  my-1"> {gender} </p>
-        <h2 className="text-xl font-style font-semibold"> ${price} </h2>
+        <h2 className="text-xl mb-2  font-style font-semibold"> ${price} </h2>
+        <Rating name="read-only" size="large" value={rate} readOnly />
       </div>
       <Link className="bgi-btn text-center py-3 text-white font-bold" to={'/everything'} >BUY NOW</Link>
       <button  onClick={() => handleProductDetails(_id)} className="cart-btn mt-1 mb-1 py-3 font-bold text-center" >VIEW DETAILS</button>

@@ -83,7 +83,7 @@ const Navbar = ({ cartItems }) => {
           to="/"
           className="btn btn-ghost font-extrabold normal-case text-3xl"
         >
-          Buy SMART
+          BuySMART
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
