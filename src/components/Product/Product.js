@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Product = ({ p }) => {
   
-  const { gender, image, name, price,id} = p;
+  const { gender, image, name, price,_id} = p;
   const navigate = useNavigate()
 
   const handleProductDetails = id =>{
@@ -23,7 +23,7 @@ const Product = ({ p }) => {
         <h2 className="text-lg font-semibold"> {price} </h2>
       </div>
       <Link className="bgi-btn text-center py-3 text-white font-bold" to={'/everything'} >BUY NOW</Link>
-      <button  onClick={() => handleProductDetails(p.id)} className="cart-btn mt-1 mb-1 py-3 font-bold text-center" >VIEW DETAILS</button>
+      <button  onClick={() => handleProductDetails(_id)} className="cart-btn mt-1 mb-1 py-3 font-bold text-center" >VIEW DETAILS</button>
     </div>
   );
 };
