@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+.font-style{
+    font-family: 'Merienda', sans-serif;
+}
 .cart-btn{
     background: rgb(23, 32, 33);
 background: radial-gradient(circle, rgb(9, 17, 18) 0%, rgb(33, 40, 39) 100%);

@@ -7,20 +7,20 @@
     background-position:center center;
     height: auto;
     background-attachment: fixed;
-    text-shadow : 3px 3px 3px #000000;
+    text-shadow : 4px 4px 4px #000000;
 }
 
 .bgi-btn{
   
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #30aef8 0%, #023661 100%);
+    background-color: #35acf0;
+    background-image: linear-gradient(160deg, #41acea 0%, #023661 100%);
     
 }
 
 .bgi-btn:hover{
     
-    background-color: #0579bd;
-    background-image: linear-gradient(160deg, #088bd7 0%, #022b4d 100%); 
+    background-color: #1a91d6;
+    background-image: linear-gradient(160deg, #3a90c2 0%, #01172b 100%); 
 }
 
 .shop-btn:hover{

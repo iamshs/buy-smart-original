@@ -1,11 +1,17 @@
 import React from "react";
 import {  useNavigate } from "react-router-dom";
+import Loading from "../Loading/Loading";
 
-const Everything = ({ products , handleAddProducts }) => {
+const Everything = ({ array , handleAddProducts, loading }) => {
     const navigate = useNavigate()
     const handleProductDetails = id =>{
         navigate(`/productDetails/${id}`)
     }
+ 
+    if(loading){
+      return <Loading />
+    }
+
   return (
     <div>
       <h2 className="lg:text-3xl text-2xl font-bold lg:pt-8 pt-4  ml-2 text-center">
@@ -15,7 +21,7 @@ const Everything = ({ products , handleAddProducts }) => {
         <div style={{ height: "3px" }} className="bg-sky-600 w-32"></div>
       </div>
       <div className="grid lg:grid-cols-4 grid-cols-1 gap-8 p-4 bg-slate-200">
-        {products.map((p) => (
+        {array.map((p) => (
           <div key={p.id} className="card bg-white  shadow-sm p-10 lg:p-1">
             <figure className="p-0">
               <img

@@ -5,7 +5,7 @@
     "name": "Limon",
     "price": "148.26",
     "gender": "Female",
-    "rate": "Dr",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -14,7 +14,7 @@
     "name": "Leer",
     "price": "146.81",
     "gender": "Male",
-    "rate": "Mrs",
+    "rate":4,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -23,7 +23,7 @@
     "name": "Niemetz",
     "price": "147.16",
     "gender": "female",
-    "rate": "Mrs",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -32,7 +32,7 @@
     "name": "Folling",
     "price": "116.27",
     "gender": "Male",
-    "rate": "Mr",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -41,7 +41,7 @@
     "name": "Moodey",
     "price": "130.14",
     "gender": "Male",
-    "rate": "Ms",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -50,7 +50,7 @@
     "name": "Lotto",
     "price": "106.54",
     "gender": "Male",
-    "rate": "Ms",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -59,7 +59,7 @@
     "name": "MacMearty",
     "price": "104.65",
     "gender": "Male",
-    "rate": "Dr",
+    "rate": 4 ,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -68,7 +68,7 @@
     "name": "Dowber",
     "price": "104.65",
     "gender": "Polygender",
-    "rate": "Rev",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -77,7 +77,7 @@
     "name": "Thorn",
     "price": "124.56",
     "gender": "Male",
-    "rate": "Dr",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -86,7 +86,7 @@
     "name": "Toyota",
     "price": "122.31",
     "gender": "Genderflu_id",
-     "rate": "Honorable",
+     "rate": 5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -95,7 +95,7 @@
     "name": "Watch-gt",
     "price": "122.31",
     "gender": "Genderflu_id",
-    "rate": "Honorable",
+    "rate":5,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   },
   {
@@ -104,7 +104,7 @@
     "name": "Smart Watch",
     "price": "122.31",
     "gender": "Genderflu_id",
-    "rate": "Honorable",
+    "rate":4,
     "details": "Sed id lacus ante. Mauris elementum  erat a odio tempor dictum. Mauris in est quis turpis accumsan euismod. Duis risus libero, tempus at vehicula et, scelerisque consectetur turpis."
   }
 ]

@@ -102,7 +102,7 @@ const Login = () => {
           toast.error("something went wrong");
       }
     }
-  }, [hookError, googleError]);
+  }, [hookError, googleError,resetError]);
 
   return (
     <div className="login-bg flex justify-center items-center  ">
